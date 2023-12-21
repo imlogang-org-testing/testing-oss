@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  testing-oss:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+
+workflows:
+  testing-oss:
+    jobs:
+      - testing-oss
